@@ -18,7 +18,7 @@ ORANGE = "#CB772F"
 PURPLE = "#9876AA"
 YELLOW = "#F1C829"
 GOLD = "#FFC66D"
-EMERAUD = "#88BE05"
+EMERALD = "#88BE05"
 GREEN = "#6A8759"
 AQUA = "#6897BB"
 
@@ -63,12 +63,12 @@ class DarculaStyle(Style):
         Name.Constant:             ORANGE,      # class: 'no' - to be revised
         Name.Decorator:            YELLOW,      # class: 'nd' - to be revised
         Name.Entity:               "",          # class: 'ni'
-        Name.Exception:            EMERAUD,     # class: 'ne'
+        Name.Exception:            EMERALD,     # class: 'ne'
         Name.Function:             GOLD,        # class: 'nf'
         Name.Property:             "",          # class: 'py'
         Name.Label:                "",          # class: 'nl'
         Name.Namespace:            "",          # class: 'nn' - to be revised
-        Name.Other:                EMERAUD,     # class: 'nx'
+        Name.Other:                EMERALD,     # class: 'nx'
         Name.Tag:                  YELLOW,      # class: 'nt' - like a keyword
         Name.Variable:             "",          # class: 'nv' - to be revised
         Name.Variable.Class:       "",          # class: 'vc' - to be revised
@@ -102,8 +102,8 @@ class DarculaStyle(Style):
         Generic.Deleted:           FOREGROUND,            # class: 'gd',
         Generic.Emph:              "italic",              # class: 'ge'
         Generic.Error:             "",                    # class: 'gr'
-        Generic.Heading:           "bold " + EMERAUD,     # class: 'gh'
-        Generic.Inserted:          EMERAUD,               # class: 'gi'
+        Generic.Heading:           "bold " + EMERALD,     # class: 'gh'
+        Generic.Inserted:          EMERALD,               # class: 'gi'
         Generic.Output:            "",                    # class: 'go'
         Generic.Prompt:            "bold " + COMMENT,     # class: 'gp'
         Generic.Strong:            "bold",                # class: 'gs'
