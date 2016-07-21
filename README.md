@@ -33,7 +33,7 @@ python setup.py install
 
 Run the `pygmentize` command
 
-```
+```bash
 pygmentize -f html -S [style] -a .class-name > output.css
 ```
 
@@ -47,13 +47,13 @@ The options are:
 
 ### Example 1 - Darcula Base
 
-```
+```bash
 pygmentize -f html -S darcula -a .highlight > darcula.css
 ```
 
 Output
 
-```
+```css
 .highligth .hll { background-color: #214283 }
 .highligth  { background: #2B2B2B; color: #A9B7C6 }
 .highligth .c { color: #808072 } /* Comment */
@@ -71,7 +71,7 @@ pygmentize -f html -S darcula_properties -a .highlight > darcula_properties.css
 
 Output
 
-```
+```css
 .highlight .hll { background-color: #214283 }
 .highlight  { background: #2B2B2B; color: #A9B7C6 }
 .highlight .c { color: #808072 } /* Comment */
@@ -84,7 +84,7 @@ Output
 
 **ALL** will mean merge `Base` and *other supports* on single `.css` file. *Other supports* will be prefixed with class that match language.
 
-```
+```bash
 # Generate darcula base 
 pygmentize -f html -S darcula -a .highlight > darcula_base.css
 # Generate darcula for properties
@@ -106,7 +106,7 @@ rm -f commons.css.tmp
 
 If you are using modern `bash >= 4`
 
-```
+```bash
 cat <(pygmentize -f html -S darcula -a .highlight) \
   <(grep -vwF -f \
     <(grep -F -f <(sed 's/\.highlight\s*//g' <(pygmentize -f html -S darcula -a .highlight)) <(sed 's/\.highlight\.[a-zA-Z0-9]* *//g' <(pygmentize -f html -S darcula_properties -a .highlight.properties))) \
