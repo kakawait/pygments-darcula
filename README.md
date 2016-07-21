@@ -116,5 +116,9 @@ cat <(pygmentize -f html -S darcula -a .highlight) \
 ```
 
 Or simply use/edit [`build.sh`](build.sh)
- 
+
+## Todo
+
+- [ ] Rework colors (multiline comment, annotation) does not match original theme
+- [ ] Javascript support 
 
