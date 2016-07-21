@@ -78,6 +78,7 @@ Output
 .highlight .err { color: #960050 } /* Error */
 .highlight .o { color: #A9B7C6 } /* Operator */
 .highlight .ch { color: #808072 } /* Comment.Hashbang */
+...
 ```
 
 ### Example 3 - Darcula **ALL**
