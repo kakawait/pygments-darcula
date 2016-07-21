@@ -8,12 +8,13 @@ from pygments.style import Style
 from pygments.token import Keyword, Name, Comment, String, Error, Text, \
      Number, Operator, Generic, Whitespace, Punctuation, Other, Literal
 
-
 BACKGROUND = "#2B2B2B"
 SELECTION = "#214283"
 FOREGROUND = "#A9B7C6"
 
-COMMENT = "#808072"
+RED = "#960050"
+GRAY = "#808072"
+JADE = "#53833D"
 ORANGE = "#CB772F"
 PURPLE = "#9876AA"
 YELLOW = "#F1C829"
@@ -33,11 +34,11 @@ class DarculaStyle(Style):
         # No corresponding class for the following:
         Text:                      FOREGROUND,  # class:  ''
         Whitespace:                "",          # class: 'w'
-        Error:                     "#960050",   # class: 'err'
+        Error:                     RED,         # class: 'err'
         Other:                     "",          # class 'x'
 
-        Comment:                   COMMENT,   # class: 'c'
-        Comment.Multiline:         "",        # class: 'cm'
+        Comment:                   GRAY,      # class: 'c'
+        Comment.Multiline:         JADE,      # class: 'cm'
         Comment.Preproc:           "",        # class: 'cp'
         Comment.Single:            "",        # class: 'c1'
         Comment.Special:           "",        # class: 'cs'
@@ -56,7 +57,7 @@ class DarculaStyle(Style):
         Punctuation:               FOREGROUND,  # class: 'p'
 
         Name:                      FOREGROUND,  # class: 'n'
-        Name.Attribute:            PURPLE,      # class: 'na' - to be revised
+        Name.Attribute:            "",          # class: 'na' - to be revised
         Name.Builtin:              "",          # class: 'nb'
         Name.Builtin.Pseudo:       "",          # class: 'bp'
         Name.Class:                "",          # class: 'nc' - to be revised
@@ -98,14 +99,14 @@ class DarculaStyle(Style):
         String.Single:             "",          # class: 's1'
         String.Symbol:             "",          # class: 'ss'
 
-        Generic:                   COMMENT,               # class: 'g'
+        Generic:                   GRAY,                  # class: 'g'
         Generic.Deleted:           FOREGROUND,            # class: 'gd',
         Generic.Emph:              "italic",              # class: 'ge'
         Generic.Error:             "",                    # class: 'gr'
         Generic.Heading:           "bold " + EMERALD,     # class: 'gh'
         Generic.Inserted:          EMERALD,               # class: 'gi'
         Generic.Output:            "",                    # class: 'go'
-        Generic.Prompt:            "bold " + COMMENT,     # class: 'gp'
+        Generic.Prompt:            "bold " + GRAY,        # class: 'gp'
         Generic.Strong:            "bold",                # class: 'gs'
         Generic.Subheading:        FOREGROUND,            # class: 'gu'
         Generic.Traceback:         "",                    # class: 'gt'
