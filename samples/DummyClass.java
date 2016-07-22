@@ -1,4 +1,4 @@
-package com.dassault_systemes.dsi;
+package com.kakawait;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

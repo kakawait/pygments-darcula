@@ -5,7 +5,12 @@ This is a [pygments](http://pygments.org/) version of *Darcula* theme from Jetbr
 This includes following language support:
 
 - `Java` (aka `Base`)
+
+![Java highlighting](samples/dummyClass.png)
+
 - `Properties`
+
+![Properties highlighting](samples/dummyProperties.png)
 
 ## How to use it?
 
