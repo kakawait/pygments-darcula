@@ -7,7 +7,7 @@ Darcula for .properties files
 from pygments.style import Style
 from pygments.token import Keyword, Name, Comment, String, Error, Text, \
      Number, Operator, Generic, Whitespace, Punctuation, Other, Literal
-import base
+import pygments_style_darcula.base as base
 
 class DarculaPropertiesStyle(Style):
 

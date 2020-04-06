@@ -1,2 +1,2 @@
-from base import DarculaStyle
-from properties import DarculaPropertiesStyle
+from pygments_style_darcula.base import DarculaStyle
+from pygments_style_darcula.properties import DarculaPropertiesStyle
